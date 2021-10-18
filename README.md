@@ -42,14 +42,13 @@ This module implements the following terraform resources:
 - `google_pubsub_subscription_iam_binding`
 - `google_pubsub_subscription_iam_member`
 - `google_pubsub_subscription_iam_policy`
-- `google_iam_policy`
 
 ## Getting Started
 
 Most basic usage just setting required arguments:
 
 ```hcl
-module "terraform-google-cloud-function-iam" {
+module "terraform-google-pubsub-subscription-iam" {
   source = "github.com/mineiros-io/terraform-google-pubsub-subscription-iam?ref=v0.1.0"
 
   subscription   = "example-subscription"
@@ -253,7 +252,7 @@ Copyright &copy; 2020-2021 [Mineiros GmbH][homepage]
 
 <!-- markdown-link-check-enable -->
 
-[badge-semver]: https://img.shields.io/github/v/tag/mineiros-io/terraform-google-cloud-function-iam.svg?label=latest&sort=semver
+[badge-semver]: https://img.shields.io/github/v/tag/mineiros-io/terraform-google-pubsub-subscription-iam.svg?label=latest&sort=semver
 [badge-license]: https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg
 [badge-terraform]: https://img.shields.io/badge/Terraform-1.x-623CE4.svg?logo=terraform
 [badge-slack]: https://img.shields.io/badge/slack-@mineiros--community-f32752.svg?logo=slack
