@@ -51,9 +51,9 @@ Most basic usage just setting required arguments:
 module "terraform-google-pubsub-subscription-iam" {
   source = "github.com/mineiros-io/terraform-google-pubsub-subscription-iam?ref=v0.1.0"
 
-  subscription   = "example-subscription"
-  role           = "roles/editor"
-  members        = ["user:member@example.com"]
+  subscription = "example-subscription"
+  role         = "roles/editor"
+  members      = ["user:member@example.com"]
 }
 ```
 
@@ -89,7 +89,7 @@ See [variables.tf] and [examples/] for details and use-cases.
 
   The subscription to apply the IAM role to.
 
-- **`members`**: **_(Optional `string`)_
+- **`members`**: _(Optional `string`)_
 
   Identities that will be granted the privilege in role. Each entry can have one of the following values:
   - `allUsers`: A special identifier that represents anyone who is on the internet; with or without a Google account.
