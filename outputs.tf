@@ -1,12 +1,20 @@
 locals {
-  binding = try(google_pubsub_subscription_iam_binding.binding[0], null)
-  member  = try(google_pubsub_subscription_iam_member.member, null)
-  policy  = try(google_pubsub_subscription_iam_policy.policy[0], null)
+  binding = one(google_pubsub_subscription_iam_binding.binding)
+  member  = google_pubsub_subscription_iam_member.member
+  policy  = one(google_pubsub_subscription_iam_policy.policy)
 
   iam_output = [local.binding, local.member, local.policy]
 
   iam_output_index = var.policy_bindings != null ? 2 : var.authoritative ? 0 : 1
 }
+
+# ----------------------------------------------------------------------------------------------------------------------
+# OUTPUT CALCULATED VARIABLES (prefer full objects)
+# ----------------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------------
+# OUTPUT ALL RESOURCES AS FULL OBJECTS
+# ----------------------------------------------------------------------------------------------------------------------
 
 output "iam" {
   description = "All attributes of the created 'iam_binding' or 'iam_member' or 'iam_policy' resource according to the mode."
