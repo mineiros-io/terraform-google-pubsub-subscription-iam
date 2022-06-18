@@ -98,12 +98,12 @@ Alternatively, you can also run the tests without Docker.
 
 <!-- References -->
 
-[makefile]: https://github.com/mineiros-io/terraform-google-kms-key-ring-iam/blob/main/Makefile
-[testdirectory]: https://github.com/mineiros-io/terraform-google-kms-key-ring-iam/tree/main/test
-[unit-disabled]: https://github.com/mineiros-io/terraform-google-kms-key-ring-iam/blob/main/test/unit-disabled/main.tf
-[unit-minimal]: https://github.com/mineiros-io/terraform-google-kms-key-ring-iam/blob/main/test/unit-minimal/main.tf
-[unit-complete]: https://github.com/mineiros-io/terraform-google-kms-key-ring-iam/blob/main/test/unit-complete/main.tf
-[homepage]: https://mineiros.io/?ref=terraform-google-kms-key-ring-iam
+[makefile]: https://github.com/mineiros-io/terraform-google-pubsub-subscription-iam/blob/main/Makefile
+[testdirectory]: https://github.com/mineiros-io/terraform-google-pubsub-subscription-iam/tree/main/test
+[unit-disabled]: https://github.com/mineiros-io/terraform-google-pubsub-subscription-iam/blob/main/test/unit-disabled/main.tf
+[unit-minimal]: https://github.com/mineiros-io/terraform-google-pubsub-subscription-iam/blob/main/test/unit-minimal/main.tf
+[unit-complete]: https://github.com/mineiros-io/terraform-google-pubsub-subscription-iam/blob/main/test/unit-complete/main.tf
+[homepage]: https://mineiros.io/?ref=terraform-google-pubsub-subscription-iam
 [terratest]: https://github.com/gruntwork-io/terratest
 [package testing]: https://golang.org/pkg/testing/
 [docker]: https://docs.docker.com/get-started/
