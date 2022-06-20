@@ -68,9 +68,6 @@ jobs:
         with:
           tflint_version: v0.29.0
 
-      - name: Setup Markdown check
-        run: npm install -g markdown-link-check
-
       - name: Setup and run pre-commit
         # for security reasons we pin commit ids and not tags.
         # pre-commit/action@v2.0.3 -> 9b88afc9cd57fd75b655d5c71bd38146d07135fe
