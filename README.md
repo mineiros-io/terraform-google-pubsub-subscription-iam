@@ -50,7 +50,7 @@ Most basic usage just setting required arguments:
 
 ```hcl
 module "terraform-google-pubsub-subscription-iam" {
-  source = "github.com/mineiros-io/terraform-google-pubsub-subscription-iam?ref=v0.0.3"
+  source = "github.com/mineiros-io/terraform-google-pubsub-subscription-iam?ref=v0.0.4"
 
   subscription = "example-subscription"
   role         = "roles/editor"
